@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Apple Landing Page Clone">
+    <meta name="description" content="Apple Landing Page Clone">
+
+    <!-- Link To CSS Files -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="(max-width:500px)" href="mobile.css">
+
+    <!-- Font Google (Apple Font) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Website Title -->
+    <title>Apple</title>
+    <link rel="icon" href="icons/apple-logo-transparent.png">
+
+    <script>
+        // JavaScript to handle the image carousel
+        document.addEventListener("DOMContentLoaded", function () {
+            const lomotImages = document.querySelectorAll("#lomot img");
+            let activeIndex = 0;
+
+            function changeImage() {
+                lomotImages.forEach((img, index) => {
+                    if (index === activeIndex) {
+                        img.style.opacity = 1;
+                    } else {
+                        img.style.opacity = 0;
+                    }
+                });
+
+                activeIndex = (activeIndex + 1) % lomotImages.length;
+                setTimeout(changeImage, 5000); // Change image every 5 seconds
+            }
+
+            changeImage(); // Initial call to start the carousel
+        });
+    </script>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav id="navbar">
+                <ul>
+                    <li class="apple-logo-icon"><a href="#"><img src="icons/apple-logo.png" alt="Apple Logo" class="apple"></a></li>
+                    <li><a href="#">商店</a></li>
+                    <li><a href="#">Mac</a></li>
+                    <li><a href="#">iPad</a></li>
+                    <li><a href="#">iPhone</a></li>
+                    <li><a href="#">Watch</a></li>
+                    <li><a href="#">Vision</a></li>
+                    <li><a href="#">AirPods</a></li>
+                    <li><a href="#">TV和家庭</a></li>
+                    <li><a href="#">娛樂</a></li>
+                    <li><a href="#">配件</a></li>
+                    <li><a href="#">支援服務</a></li>
+                    <li class="nav-icon"><a href="#"><img src="icons/search-icon.png" alt="Search Icon" class="search"></a></li>
+                    <li class="nav-icon"><a href="#"><img src="icons/bag-icon.png" alt="Bag Icon" class="bag"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="navbar-space"></div>
+    
+    <section id="iphone-15-pro" class="bg-image-iphone-15-pro">
+        <div class="main-title">iPhone 15 Pro</div>
+        <div class="sub-title">鈦金屬，超堅固、超輕、超Pro。.</div>
+        <div class="link-group">
+            <div class="link"><a href="#">進一步瞭解</a> ></div>
+            <div class="link"><a href="#">購買</a> ></div>
+        </div>
+    </section>
+
+    <div class="space"></div>
+
+    <section id="iphone-15" class="bg-image-iphone-15">
+        <div class="main-title">iPhone 15</div>
+        <div class="sub-title">新相機，新設計，新的愛，狂比心。</div>
+        <div class="link-group">
+            <div class="link"><a href="#">進一步瞭解</a> ></div>
+            <div class="link"><a href="#">購買</a> ></div>
+        </div>
+    </section>
+
+    <div class="space"></div>
+
+    <section id="apple-watch-s9" class="bg-image-apple-watch-s9">
+        <div class="main-title"><img src="icons/apple-watch-s9-logo.png" alt=""></div>
+        <div class="sub-title">智慧升級，亮度，實力在晉級。</div>
+        <div class="link-group">
+            <div class="link"><a href="#">近一步了解</a> ></div>
+            <div class="link"><a href="#">購買</a> ></div>
+        </div>
+    </section>
+
+    <div class="space"></div>
+
+    <div class="container-for-2-section">
+        <section id="apple-watch-ultra-2">
+            <!-- <div class="small-main-title"><img src="icons/apple-watch-ultra-2-logo.png" alt=""></div> -->
+            <div class="small-main-title">MacBook Pro</div>
+            <div class="pre-order-small">炫技，炫目。</div>
+            <div class="link-group">
+                <div class="link"><a href="#">進一步瞭解</a> ></div>
+                <div class="link"><a href="#">購買</a> ></div>
+            </div>
+        </section>
+        <section id="carbon-neutral">
+            <!-- <div class="small-main-title"><img src="icons/carbon-neutral-logo.png" alt=""></div> -->
+            <div class="small-main-title">iPad</div>
+            <div class="pre-order-small">可愛，可畫，可圈可點。</div>
+            <div class="link-group">
+                <div class="link"><a href="#">進一步了解</a> ></div>
+                <div class="link"><a href="#">購買</a> ></div>
+            </div>
+        </section>
+    </div>
+
+    <div class="space"></div>
+
+    <div class="container-for-2-section">
+        <section id="apple-watch-se">
+            <!-- <div class="small-main-title"><img src="icons/apple-watch-se-logo.png" alt=""></div> -->
+            <div class="small-main-title">AirPods Pro</div>
+            <div class="small-sub-title">適應性音訊，現正開播。</div>
+            <div class="link-group">
+                <div class="link"><a href="#">進一步瞭解</a> ></div>
+                <div class="link"><a href="#">購買</a> ></div>
+            </div>
+        </section>
+        <section id="save-for-college">
+            <div class="small-main-title"><img src="icons/apple-watch-ultra-2-logo.png" alt=""></div>
+            <div class="small-sub-title">征途，在超越。</div>
+            <div class="link-group">
+                <div class="link"><a href="#">進一步瞭解</a> ></div>
+                <div class="link"><a href="#">購買</a> ></div>
+            </div>
+            
+            <video src="icons/Save-For-College-video.mp4" autoplay loop></video>
+        </section>
+    </div>
+
+    <div class="space"></div>
+
+    <div class="container-for-2-section">
+        <section id="apple-card">
+            <!-- <div class="small-main-title"><img src="icons/apple-card-logo.png" alt=""></div> -->
+            <div class="small-main-title">HomePod mini</div>
+            <div class="link-group">
+                <div class="link"><a href="#">進一步瞭解</a> ></div>
+                <div class="link"><a href="#">購買</a> ></div>
+            </div>
+        </section>
+        <section id="trade-in">
+            <div class="small-main-title"><img src="icons/iphone-tradein-logo.png" alt=""></div>
+            <div class="small-sub-title">Get $200-$650 in credit when</div>
+            <div class="small-sub-title">you trade in iPhone 11 or higher.</div>
+            <div class="link-group">
+                <div class="link"><a href="#">See what your device is worth</a> ></div>
+            </div>
+            
+        </section>
+    </div>
+
+    <div class="space"></div>
+    
+    <div class="space"></div>
+
+    <section id="lomot" class="bg-lomot">
+        <section id="lomot-1" class="bg-lomot">
+            <img src="icons/apple-watch-s9.jpg" alt="Lomot Image 1">
+        </section>
+        
+        <section id="lomot-2" class="bg-lomot">
+            <img src="icons/apple-watch-se.jpg" alt="Lomot Image 2">
+        </section>
+        
+        <section id="lomot-3" class="bg-lomot">
+            <img src="icons/apple-watch-ultra-2.jpg" alt="Lomot Image 3">
+        </section>
+        
+        <section id="lomot-4" class="bg-lomot">
+            <img src="icons/ipad-pro.jpg" alt="Lomot Image 4">
+        </section>
+        
+        <section id="lomot-5" class="bg-lomot">
+            <img src="icons/iphone-14.jpg" alt="Lomot Image 5">
+        </section>
+    </section>
+
+    <section id="footer" class="bg-footer">
+        <div class="text-box">
+            <p style="">1. 折抵換購服務由 Apple 的換購服務合作夥伴提供。折抵金額報價僅為預估價，實際折抵換購價值可能低於估價。實際換購估價視你折抵換購裝置的狀況、推出年份與機型而有所差異。並非所有裝置均符合折抵條件。你必須至少年滿 18 歲，才有折抵換購的資格，以獲享折抵優惠或取得 Apple Store 禮品卡。你現有裝置的價值，可能適用於購買新 Apple 裝置。實際獲得的換購價值，是根據收到符合條件的裝置，是否吻合你在估價時所提供的描述而定。可能須按照新裝置的全額售價繳納加值型營業稅。店內換購須出示政府核發的有效照片證件，才能享有此項優惠 (當地法律可能要求保存這份資訊)。優惠可能無法在所有直營店提供，線上和店內折抵換購的估價可能會有所不同。部分直營店可能會有額外的要求。Apple 的換購服務合作夥伴保留以任何理由拒絕或限制接受任何裝置 (及其數量) 參與本優惠的權利。更多詳情可自 Apple 的換購服務合作夥伴取得，以了解符合換購及回收條件的裝置。須遵守 Apple 的換購服務合作夥伴所訂立的其他條款。
+                使用 Apple TV+ 須訂閱服務。</p>
+        </div>
+    </section>
+    <section id="footer-categories" class="bg-footer-categories">
+        <div id="footer-container">
+            <div class="line-1">
+                <span class="title">選購與了解產品</span> <br>
+                <span class="links"><a href="#">商店</a></span> <br>
+                <span class="links"><a href="#">Mac</a></span> <br>
+                <span class="links"><a href="#">iPad</a></span> <br>
+                <span class="links"><a href="#">iPhone</a></span> <br>
+                <span class="links"><a href="#">Watch</a></span> <br>
+                <span class="links"><a href="#">Vision</a></span> <br>
+                <span class="links"><a href="#">AirPods</a></span> <br>
+                <span class="links"><a href="#">TV 和家庭</a></span> <br>
+                <span class="links"><a href="#">AirTag</a></span> <br>
+                <span class="links"><a href="#">配件</a></span> <br>
+                <span class="links"><a href="#">禮品卡</a></span> <br> <br>
+                <span class="title">Apple 錢包</span> <br>
+                <span class="links"><a href="#">Apple Pay</a></span> <br>
+            </div>
+            <div class="line-2">
+                <span class="title">帳戶</span> <br>
+                <span class="links"><a href="#">管理你的 Apple ID</a></span> <br>
+                <span class="links"><a href="#">Apple Store Account</a></span> <br>
+                <span class="links"><a href="#">iCloud.com</a></span> <br> <br>
+                <span class="title">娛樂</span> <br>
+                <span class="links"><a href="#">Apple One</a></span> <br>
+                <span class="links"><a href="#">Apple TV+</a></span> <br>
+                <span class="links"><a href="#">Apple Music</a></span> <br>
+                <span class="links"><a href="#">Apple Arcade</a></span> <br>
+                <span class="links"><a href="#">Apple Fitness+</a></span> <br>
+                <span class="links"><a href="#">Apple News+</a></span> <br>
+                <span class="links"><a href="#">Apple Podcasts</a></span> <br>
+                <span class="links"><a href="#">Apple Books</a></span> <br>
+                <span class="links"><a href="#">App Store</a></span> <br>
+            </div>
+            <div class="line-3">
+                <span class="title">Apple Store</span> <br>
+                <span class="links"><a href="#">尋找直營店</a></span> <br>
+                <span class="links"><a href="#">Genius Bar 天才吧</a></span> <br>
+                <span class="links"><a href="#">Today at Apple</a></span> <br>
+                <span class="links"><a href="#">Apple 夏令營</a></span> <br>
+                <span class="links"><a href="#">Apple Store App</a></span> <br>
+                <span class="links"><a href="#">認證整修品</a></span> <br>
+                <span class="links"><a href="#">Apple Trade In 換購方案</a></span> <br>
+                <span class="links"><a href="#">信用卡分期付款</a></span> <br>
+                <span class="links"><a href="#">訂單狀態</a></span> <br>
+                <span class="links"><a href="#">購物協助</a></span> <br>
+            </div>
+            <div class="line-4">
+                <span class="title">商務應用</span> <br>
+                <span class="links"><a href="#">Apple 與商務</a></span> <br>
+                <span class="links"><a href="#">商務選購</a></span> <br> <br>
+                <span class="title">教育應用</span> <br>
+                <span class="links"><a href="#">Apple 與教育</a></span> <br>
+                <span class="links"><a href="#">大專校院師生選購</a></span> <br>
+                
+            </div>
+            <div class="line-5">
+                <span class="title">Apple 價值理念</span> <br>
+                <span class="links"><a href="#">輔助使用</a></span> <br>
+                <span class="links"><a href="#">環境</a></span> <br>
+                <span class="links"><a href="#">隱私權</a></span> <br> <br>
+                <span class="links"><a href="#">供應商責任</a></span> <br> <br>
+                <span class="title">關於 Apple</span> <br>
+                <span class="links"><a href="#">Newsroom</a></span> <br>
+                <span class="links"><a href="#">Apple 領導團隊</a></span> <br>
+                <span class="links"><a href="#">工作機會</a></span> <br>
+                <span class="links"><a href="#">商業倫理與法規遵循</a></span> <br>
+                <span class="links"><a href="#">活動</a></span> <br>
+                <span class="links"><a href="#">聯絡 Apple</a></span> <br>
+            </div>
+        </div>
+    </section>
+
+    </body>
+</html>
